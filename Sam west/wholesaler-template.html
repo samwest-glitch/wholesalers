@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Samwest Wholesale Distributors — Nairobi Wholesaler</title>
+<meta name="description" content="Samwest Wholesalers supplies Nairobi retailers, schools, caterers and offices with bulk FMCG essentials, groceries, cleaning products and daily essentials at competitive wholesale prices.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1E3A2B">
+<meta property="og:title" content="Samwest Wholesale Distributors">
+<meta property="og:description" content="Wholesale essentials for Nairobi retailers, schools, caterers and offices.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #182639;
+    --ink-soft: #4E5F78;
+    --paper: #F3F8FF;
+    --paper-raised: #FFFFFF;
+    --forest: #1D4E89;
+    --forest-deep: #153C69;
+    --ochre: #7DB3EA;
+    --ochre-deep: #4A8ED6;
+    --sage: #89A8D6;
+    --line: rgba(24,38,57,0.12);
+    --line-strong: rgba(24,38,57,0.24);
+    --warn-bg: #EAF4FF;
+    --warn-line: #4A8ED6;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #EDE8DE;
+      --ink-soft: #B9B2A4;
+      --paper: #17150F;
+      --paper-raised: #1F1C15;
+      --forest: #7FAE8E;
+      --forest-deep: #0E1911;
+      --ochre: #E0A64C;
+      --ochre-deep: #F0BE72;
+      --line: rgba(237,232,222,0.14);
+      --line-strong: rgba(237,232,222,0.28);
+      --warn-bg: #2A2210;
+      --warn-line: #E0A64C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #EDE8DE;
+    --ink-soft: #B9B2A4;
+    --paper: #17150F;
+    --paper-raised: #1F1C15;
+    --forest: #7FAE8E;
+    --forest-deep: #0E1911;
+    --ochre: #E0A64C;
+    --ochre-deep: #F0BE72;
+    --line: rgba(237,232,222,0.14);
+    --line-strong: rgba(237,232,222,0.28);
+    --warn-bg: #2A2210;
+    --warn-line: #E0A64C;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Manrope', 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3 { font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; margin: 0; color: var(--ink); }
+  a { color: inherit; }
+  section[id], footer[id] { scroll-margin-top: 88px; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 28px; }
+  img { max-width: 100%; display: block; }
+
+  /* Nav */
+  header.site {
+    position: sticky; top: 0; top: env(safe-area-inset-top, 0px);
+    z-index: 20; background: var(--paper); border-bottom: 1px solid var(--line);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 28px; max-width: 1060px; margin: 0 auto; }
+  .brand { display: flex; align-items: baseline; gap: 8px; font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; font-size: 1.15rem; letter-spacing: -0.02em; }
+  .brand em { font-style: italic; font-weight: 300; color: var(--ochre-deep); }
+  nav.links { display: flex; gap: 28px; font-size: 0.92rem; }
+  nav.links a { text-decoration: none; color: var(--ink-soft); border-bottom: 1px solid transparent; padding-bottom: 2px; }
+  nav.links a:hover { color: var(--ink); border-color: var(--line-strong); }
+  .nav-cta { display: none; }
+  @media (min-width: 720px) { .nav-cta { display: inline-block; } }
+  .profile-banner {
+    width: min(720px, calc(100% - 32px));
+    margin: 16px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+  }
+  .profile-banner img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  @media (min-width: 760px) {
+    .profile-banner img { max-height: 260px; }
+  }
+  .btn {
+    display: inline-block; padding: 11px 20px; border-radius: 3px; text-decoration: none;
+    font-weight: 600; font-size: 0.92rem; border: 1px solid transparent; cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--forest); color: #F8F4EC; }
+  .btn-primary:hover { background: var(--forest-deep); }
+  .btn-outline { background: transparent; border-color: var(--line-strong); color: var(--ink); }
+  .btn-outline:hover { border-color: var(--ink); }
+
+  /* Hero */
+  .hero { padding: 64px 0 40px; }
+  .hero-grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start; }
+  @media (min-width: 860px) { .hero-grid { grid-template-columns: 1.15fr 0.85fr; gap: 56px; } }
+  .eyebrow { font-size: 0.85rem; color: var(--ink-soft); margin-bottom: 14px; }
+  .hero h1 { font-size: clamp(2.1rem, 4.6vw, 3.2rem); line-height: 1.08; letter-spacing: -0.01em; max-width: 15ch; }
+  .hero h1 i { font-style: italic; font-weight: 400; color: var(--ochre-deep); }
+  .hero p.lede { margin-top: 18px; font-size: 1.08rem; color: var(--ink-soft); max-width: 46ch; }
+  .hero-actions { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .hero-visual {
+    position: relative; margin-top: 18px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--paper-raised); box-shadow: 0 18px 36px rgba(21, 60, 105, 0.08);
+  }
+  .hero-visual img {
+    display: block; width: 100%; height: 420px; object-fit: cover;
+  }
+  .hero-badge {
+    position: absolute; left: 20px; right: 20px; bottom: 20px; display: flex; align-items: end; justify-content: space-between; gap: 18px; padding: 14px 16px; background: rgba(15, 27, 42, 0.65); color: #fff; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px); border-radius: 8px;
+  }
+  .hero-badge strong { display: block; font-size: clamp(1.4rem, 2vw, 1.9rem); font-family: 'Fraunces', serif; }
+  .hero-badge span { font-size: 0.82rem; opacity: 0.9; }
+
+  .ledger { border-top: 1px solid var(--line-strong); }
+  .ledger-row { display: flex; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+  .ledger-row .k { color: var(--ink-soft); }
+  .ledger-row .v { font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; font-size: 1.15rem; }
+
+  /* Ticker */
+  .ticker-wrap { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper-raised); overflow: hidden; }
+  .ticker { display: flex; gap: 0; white-space: nowrap; animation: scroll 34s linear infinite; padding: 13px 0; }
+  .ticker span { padding: 0 22px; font-size: 0.85rem; color: var(--ink-soft); border-right: 1px solid var(--line); }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .ticker { animation: none; overflow-x: auto; } }
+
+  section { padding: 68px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  .blue-panel {
+    background: linear-gradient(180deg, rgba(59, 110, 176, 0.07), rgba(59, 110, 176, 0.02));
+  }
+  .section-head { max-width: 56ch; margin-bottom: 40px; }
+  .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); letter-spacing: -0.01em; }
+  .section-head p { margin-top: 10px; color: var(--ink-soft); }
+
+  /* Why us — asymmetric two column */
+  .why-grid { display: grid; grid-template-columns: 1fr; gap: 36px; }
+  @media (min-width: 760px) { .why-grid { grid-template-columns: repeat(3, 1fr); gap: 30px; } }
+  .why-item h3 { font-size: 1.15rem; font-weight: 500; margin-bottom: 8px; }
+  .why-item p { color: var(--ink-soft); font-size: 0.96rem; }
+  .why-item .mark { display: inline-block; width: 28px; height: 2px; background: var(--ochre); margin-bottom: 16px; }
+
+  /* Categories — ledger list, two columns */
+  .cat-list { column-count: 1; }
+  @media (min-width: 700px) { .cat-list { column-count: 2; column-gap: 48px; } }
+  .cat-row { display: flex; justify-content: space-between; padding: 13px 0; border-bottom: 1px solid var(--line); break-inside: avoid; font-size: 0.98rem; }
+  .cat-row span.count { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+  /* Price-list catalogue */
+  .catalogue-grid { display: grid; grid-template-columns: 1fr; gap: 26px; }
+  @media (min-width: 760px) { .catalogue-grid { grid-template-columns: 1fr 1fr; gap: 40px; } }
+  .price-group { break-inside: avoid; }
+  .price-group h3 {
+    font-family: 'Manrope', 'Segoe UI', sans-serif; font-weight: 800; font-size: 0.8rem;
+    letter-spacing: 0.02em; color: var(--forest); border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 8px; margin-bottom: 2px;
+  }
+  :root[data-theme="dark"] .price-group h3 { color: var(--forest); }
+  .price-group table { width: 100%; border-collapse: collapse; }
+  .price-group tr { border-bottom: 1px solid var(--line); }
+  .price-group td { padding: 8px 0; font-size: 0.92rem; vertical-align: baseline; }
+  .price-group td.n { color: var(--ink-soft); width: 22px; font-variant-numeric: tabular-nums; }
+  .price-group td.price { text-align: right; font-weight: 600; white-space: nowrap; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .catalogue-note { margin-top: 30px; font-size: 0.9rem; color: var(--ink-soft); }
+  .catalogue-note a.inline { color: var(--forest); text-decoration: underline; text-underline-offset: 3px; }
+
+  /* WhatsApp order form */
+  .order-form {
+    margin-top: 40px; border: 1px solid var(--line-strong); border-radius: 6px;
+    padding: 30px 28px; background: var(--paper-raised);
+  }
+  .order-form h3 { font-size: 1.15rem; font-weight: 500; margin-bottom: 6px; }
+  .order-form > p { color: var(--ink-soft); font-size: 0.92rem; margin: 0 0 24px; max-width: 52ch; }
+  .form-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+  @media (min-width: 640px) { .form-grid { grid-template-columns: 1fr 1fr; } }
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+  .form-field.full { grid-column: 1 / -1; }
+  .form-field label { font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+  .form-field .hint { font-size: 0.78rem; color: var(--ink-soft); font-weight: 400; }
+  .form-field input, .form-field textarea {
+    font-family: inherit; font-size: 0.95rem; color: var(--ink); background: var(--paper);
+    border: 1px solid var(--line-strong); border-radius: 4px; padding: 10px 12px; resize: vertical;
+  }
+  .form-field input:focus, .form-field textarea:focus { outline: 2px solid var(--ochre-deep); outline-offset: 1px; border-color: transparent; }
+  .form-field textarea { min-height: 110px; line-height: 1.5; }
+  .form-actions { margin-top: 22px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .form-note { font-size: 0.82rem; color: var(--ink-soft); }
+  .btn-whatsapp { background: #25D366; color: #06240F; }
+  .btn-whatsapp:hover { background: #1FBE5B; }
+  .form-error { font-size: 0.85rem; color: #B3491F; display: none; }
+  .form-error.show { display: block; }
+
+  /* Product showcase carousel */
+  .showcase-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 28px; }
+  .carousel-controls { display: flex; gap: 8px; }
+  .carousel-btn {
+    width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line-strong);
+    background: var(--paper-raised); color: var(--ink); display: flex; align-items: center;
+    justify-content: center; cursor: pointer; font-size: 1rem; flex: none;
+  }
+  .carousel-btn:hover { border-color: var(--ink); }
+  .carousel-track {
+    display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding-bottom: 8px; margin: 0 -28px; padding-left: 28px; padding-right: 28px;
+    scrollbar-width: none;
+  }
+  .carousel-track::-webkit-scrollbar { display: none; }
+  .product-card {
+    flex: 0 0 auto; width: 190px; scroll-snap-align: start;
+    border: 1px solid var(--line); border-radius: 6px; background: var(--paper-raised);
+    padding: 20px 18px 18px; text-align: left;
+  }
+  .product-card .icon-frame {
+    width: 100%; aspect-ratio: 1 / 1; border-radius: 5px; background: var(--paper);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 14px; overflow: hidden;
+  }
+  .product-card .icon-frame img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .product-card .icon-frame svg { width: 62%; height: 62%; }
+  .product-card h4 { font-size: 0.92rem; font-weight: 600; margin: 0 0 4px; font-family: 'Public Sans', sans-serif; }
+  .product-card p { font-size: 0.8rem; color: var(--ink-soft); margin: 0; }
+
+  /* How to order */
+  .order-list { border-top: 1px solid var(--line-strong); }
+  .order-row { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 26px 0; border-bottom: 1px solid var(--line); }
+  @media (min-width: 700px) { .order-row { grid-template-columns: 220px 1fr; gap: 24px; align-items: baseline; } }
+  .order-row h3 { font-size: 1.05rem; font-weight: 500; }
+  .order-row p { color: var(--ink-soft); font-size: 0.95rem; margin: 6px 0 0; }
+  .order-row a.inline { color: var(--forest); text-decoration: underline; text-underline-offset: 3px; }
+  :root[data-theme="dark"] .order-row a.inline, @media (prefers-color-scheme: dark) { .order-row a.inline { color: var(--ochre-deep); } }
+
+  /* Delivery chips */
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .chip { border: 1px solid var(--line-strong); padding: 7px 14px; border-radius: 999px; font-size: 0.86rem; color: var(--ink-soft); }
+  .note-box { margin-top: 26px; border-left: 2px solid var(--ochre); padding: 4px 0 4px 18px; font-size: 0.95rem; color: var(--ink-soft); max-width: 52ch; }
+
+  /* FAQ */
+  details { border-bottom: 1px solid var(--line); padding: 18px 0; }
+  details:first-of-type { border-top: 1px solid var(--line-strong); }
+  summary { cursor: pointer; font-weight: 500; font-size: 1rem; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.3rem; color: var(--ink-soft); margin-left: 16px; transition: transform 0.15s ease; }
+  details[open] summary::after { transform: rotate(45deg); }
+  details p { margin: 14px 0 0; color: var(--ink-soft); max-width: 60ch; }
+
+  /* Trust / fraud notice */
+  .warn-panel { background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 4px; padding: 28px 30px; }
+  .warn-panel h2 { font-size: 1.3rem; margin-bottom: 12px; }
+  .warn-panel ul { margin: 14px 0 0; padding-left: 18px; color: var(--ink-soft); font-size: 0.95rem; }
+  .warn-panel li { margin-bottom: 6px; }
+  .warn-panel .official { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--warn-line); font-size: 0.92rem; }
+  .warn-panel .official div { margin-bottom: 4px; }
+
+  /* Contact */
+  .contact-grid { display: grid; grid-template-columns: 1fr; gap: 36px; }
+  @media (min-width: 760px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+  .contact-card h3 { font-size: 1.05rem; font-weight: 500; margin-bottom: 10px; }
+  .contact-card .line { font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 4px; }
+
+  footer.site { padding: 34px 0 48px; font-size: 0.85rem; color: var(--ink-soft); }
+  footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+  ::selection { background: var(--ochre); color: #1E1A10; }
+  :focus-visible { outline: 2px solid var(--ochre-deep); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-inner">
+    <div class="brand" aria-label="Samwest Wholesalers">Samwest<em>Distributors</em></div>
+    <nav class="links" aria-label="Main navigation">
+      <a href="#products">Catalogue</a>
+      <a href="#order-form">Order</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="#order-form" aria-label="Order now">Order now</a>
+  </div>
+</header>
+
+<div class="profile-banner" aria-label="Samwest business profile image">
+  <img src="images/sam-west-distributors-banner.jpg" alt="Samwest business banner and logo">
+</div>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Nairobi · wholesale · since 2016</div>
+      <h1>Stock your shelves from <i>one</i> warehouse, not ten suppliers.</h1>
+      <p class="lede">Samwest Wholesalers supplies retailers, schools, caterers and offices across Nairobi with everyday essentials, at prices built for people who buy in bulk.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#order-form" aria-label="Order via WhatsApp">Order via WhatsApp</a>
+        <a class="btn btn-outline" href="#products" aria-label="Browse price list">Browse price list</a>
+      </div>
+    </div>
+    <div>
+      <div class="ledger">
+        <div class="ledger-row"><span class="k">Trading since</span><span class="v">2016</span></div>
+        <div class="ledger-row"><span class="k">Product categories</span><span class="v">90+</span></div>
+        <div class="ledger-row"><span class="k">Delivery counties</span><span class="v">6</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Warehouse stock shelves image">
+        <img src="images/WhatsApp Image 2026-09-22 at 1.23.53 PM.jpeg" alt="Warehouse goods and shelving">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>Cooking oil & fats</span><span>Flour & cereals</span><span>Beverages</span><span>Detergents & cleaning</span><span>Personal care</span><span>Sugar & sweeteners</span><span>Rice & grains</span><span>Snacks & confectionery</span><span>Sanitary products</span><span>Baking supplies</span>
+    <span>Cooking oil & fats</span><span>Flour & cereals</span><span>Beverages</span><span>Detergents & cleaning</span><span>Personal care</span><span>Sugar & sweeteners</span><span>Rice & grains</span><span>Snacks & confectionery</span><span>Sanitary products</span><span>Baking supplies</span>
+  </div>
+</div>
+
+<section id="why" class="blue-panel">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Why buyers stick with us</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <span class="mark"></span>
+        <h3>Full range, one trip</h3>
+        <p>Cooking oil to cleaning supplies to snacks — most repeat orders are filled from a single visit, no chasing separate suppliers.</p>
+      </div>
+      <div class="why-item">
+        <span class="mark"></span>
+        <h3>Prices built for volume</h3>
+        <p>Direct buying relationships with manufacturers keep our margins tight, so your margins don't have to be.</p>
+      </div>
+      <div class="why-item">
+        <span class="mark"></span>
+        <h3>Delivery you can plan around</h3>
+        <p>Fixed routes, daily departures, and a driver who calls ahead — so restocking doesn't derail your day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Wholesale price list</h2>
+      <p>A snapshot of our range and pricing — the full stock list is longer and updated weekly at the warehouse.</p>
+    </div>
+    <div class="catalogue-grid">
+      <div class="price-group">
+        <h3>1. COOKING OIL &amp; FOOD STAPLES</h3>
+        <table>
+          <tr><td class="n">1</td><td>20L Cooking Oil (assorted brands)</td><td class="price">Ksh 4,100</td></tr>
+          <tr><td class="n">2</td><td>10L Cooking Oil (assorted brands)</td><td class="price">Ksh 2,050</td></tr>
+          <tr><td class="n">3</td><td>5L Sunflower Oil</td><td class="price">Ksh 1,100</td></tr>
+          <tr><td class="n">4</td><td>25kg Rice — Biriyani</td><td class="price">Ksh 2,150</td></tr>
+          <tr><td class="n">5</td><td>25kg Rice — Pishori</td><td class="price">Ksh 4,050</td></tr>
+          <tr><td class="n">6</td><td>50kg Sugar (white)</td><td class="price">Ksh 6,550</td></tr>
+          <tr><td class="n">7</td><td>2kg Wheat Flour (bale of 6)</td><td class="price">Ksh 1,820</td></tr>
+          <tr><td class="n">8</td><td>2kg Maize Flour (bale of 6)</td><td class="price">Ksh 1,600</td></tr>
+        </table>
+      </div>
+
+      <div class="price-group">
+        <h3>2. CLEANING &amp; HYGIENE</h3>
+        <table>
+          <tr><td class="n">1</td><td>Toilet Tissue (bale of 10x4)</td><td class="price">Ksh 1,450</td></tr>
+          <tr><td class="n">2</td><td>Serviettes 100 sheets (carton)</td><td class="price">Ksh 900</td></tr>
+          <tr><td class="n">3</td><td>Bar Soap 1kg (carton of 25)</td><td class="price">Ksh 3,050</td></tr>
+          <tr><td class="n">4</td><td>Washing Powder 1kg (carton of 6)</td><td class="price">Ksh 2,050</td></tr>
+          <tr><td class="n">5</td><td>Dishwashing Liquid 5L</td><td class="price">Ksh 470</td></tr>
+          <tr><td class="n">6</td><td>Bleach 1.5L (carton of 4)</td><td class="price">Ksh 3,100</td></tr>
+          <tr><td class="n">7</td><td>Hand Sanitizer 1L</td><td class="price">Ksh 480</td></tr>
+          <tr><td class="n">8</td><td>Multipurpose Cleaner 1L (carton of 6)</td><td class="price">Ksh 1,550</td></tr>
+        </table>
+      </div>
+
+      <div class="price-group">
+        <h3>3. BEVERAGES &amp; SNACKS</h3>
+        <table>
+          <tr><td class="n">1</td><td>Energy Drink 300ml (carton of 24)</td><td class="price">Ksh 2,450</td></tr>
+          <tr><td class="n">2</td><td>Soft Drink 500ml (carton of 12)</td><td class="price">Ksh 850</td></tr>
+          <tr><td class="n">3</td><td>Milk Powder 25kg</td><td class="price">Ksh 7,900</td></tr>
+          <tr><td class="n">4</td><td>UHT Milk 500ml (carton of 12)</td><td class="price">Ksh 540</td></tr>
+          <tr><td class="n">5</td><td>Biscuits assorted (carton of 24)</td><td class="price">Ksh 1,450</td></tr>
+          <tr><td class="n">6</td><td>Instant Cereal 500g (carton of 12)</td><td class="price">Ksh 2,750</td></tr>
+        </table>
+      </div>
+
+      <div class="price-group">
+        <h3>4. CEREALS &amp; GRAINS</h3>
+        <table>
+          <tr><td class="n">1</td><td>Green Grams 90kg</td><td class="price">Ksh 7,650</td></tr>
+          <tr><td class="n">2</td><td>Beans (Nylon) 90kg</td><td class="price">Ksh 6,600</td></tr>
+          <tr><td class="n">3</td><td>Millet 50kg</td><td class="price">Ksh 5,600</td></tr>
+          <tr><td class="n">4</td><td>Sorghum 90kg</td><td class="price">Ksh 3,600</td></tr>
+        </table>
+      </div>
+    </div>
+    <p class="catalogue-note">Prices are indicative and subject to change without notice. For the current full list and stock availability, <a class="inline" href="#order-form">order via WhatsApp</a> or visit the warehouse.</p>
+  </div>
+</section>
+
+<section id="showcase" class="blue-panel">
+  <div class="wrap">
+    <div class="showcase-head">
+      <div class="section-head" style="margin-bottom:0;">
+        <h2>A look at what's on the shelves</h2>
+        <p>A sample of items across our range — swipe or use the arrows to browse.</p>
+      </div>
+      <div class="carousel-controls">
+        <button type="button" class="carousel-btn" id="carousel-prev" aria-label="Scroll left">←</button>
+        <button type="button" class="carousel-btn" id="carousel-next" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+
+    <div class="carousel-track" id="carousel-track">
+
+      <div class="product-card">
+        <div class="icon-frame">
+          <img src="images/4.jpeg" alt="Cooking oil bottles">
+        </div>
+        <h4>Cooking oil</h4>
+        <p>20L &amp; 10L jerricans, assorted brands</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-frame">
+          <img src="images/7.jpeg" alt="Rice and grains sacks">
+        </div>
+        <h4>Rice &amp; grains</h4>
+        <p>25kg &amp; 50kg sacks — pishori, biriyani, more</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-frame">
+          <img src="images/5.jpeg" alt="Sugar bags">
+        </div>
+        <h4>Sugar</h4>
+        <p>50kg bags, white &amp; brown</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-frame">
+          <img src="images/6.jpeg" alt="Flour bags and staples">
+        </div>
+        <h4>Wheat &amp; maize flour</h4>
+        <p>2kg bales of 6, assorted millers</p>
+      </div>
+      <div class="product-card">
+        <div class="icon-frame">
+          <img src="images/11.jpeg" alt="Beverage cartons on display">
+        </div>
+        <h4>Soft drinks &amp; beverages</h4>
+        <p>Cartons of 12 &amp; 24, mixed flavours</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-frame">
+          <img src="images/10.jpeg" alt="Dairy and milk products">
+        </div>
+        <h4>Milk &amp; dairy</h4>
+        <p>UHT cartons &amp; 25kg milk powder</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-frame">
+          <img src="images/9.jpeg" alt="Soap bars stacked in warehouse">
+        </div>
+        <h4>Bar soap</h4>
+        <p>Cartons of 25, multiple sizes</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-frame">
+          <img src="images/8.jpeg" alt="Assorted snacks and confectionery">
+        </div>
+        <h4>Snacks &amp; confectionery</h4>
+        <p>Cartons of 24, assorted lines</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Three ways to order</h2>
+    </div>
+    <div class="order-list">
+      <div class="order-row">
+        <h3>Visit the warehouse</h3>
+        <p>Self-select or hand your list to a floor attendant. Trolleys and packing support provided. Open Monday–Saturday, 7am–6:30pm.</p>
+      </div>
+      <div class="order-row">
+        <h3>Order by WhatsApp</h3>
+        <p>Send your list to our sales line and we'll confirm stock, price and delivery timing before you pay anything.</p>
+      </div>
+      <div class="order-row">
+        <h3>Phone in a standing order</h3>
+        <p>Established accounts can set a recurring weekly or monthly order — we call to confirm quantities before each dispatch.</p>
+      </div>
+    </div>
+
+    <div class="order-form" id="order-form">
+      <h3>Send your order on WhatsApp</h3>
+      <p>Fill this in and we'll open WhatsApp with your order already written out, formatted so our sales team can quote and confirm it fast.</p>
+
+      <form id="whatsapp-order-form" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="of-name">Your name</label>
+            <input type="text" id="of-name" name="name" autocomplete="name" placeholder="e.g. Grace Wanjiru" required>
+          </div>
+          <div class="form-field">
+            <label for="of-phone">Phone number <span class="hint">(optional — for us to call you back)</span></label>
+            <input type="tel" id="of-phone" name="phone" autocomplete="tel" placeholder="e.g. 0722 000 000">
+          </div>
+          <div class="form-field full">
+            <label for="of-location">Delivery or pickup location</label>
+            <input type="text" id="of-location" name="location" placeholder="e.g. Kawangware, Nairobi — or 'I'll collect at the warehouse'" required>
+          </div>
+          <div class="form-field full">
+            <label for="of-items">Items you'd like to order <span class="hint">(one per line — item, quantity)</span></label>
+            <textarea id="of-items" name="items" placeholder="20L Cooking Oil x2&#10;50kg Sugar (white) x1&#10;Bar Soap 1kg carton x1" required></textarea>
+          </div>
+          <div class="form-field full">
+            <label for="of-notes">Anything else? <span class="hint">(preferred delivery date, brand preference, etc.)</span></label>
+            <input type="text" id="of-notes" name="notes" placeholder="e.g. Need it by Friday morning">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-whatsapp">Send order via WhatsApp</button>
+          <span class="form-note"</span>
+        </div>
+        <p class="form-error" id="of-error">Please add your name, a delivery location, and at least one item before sending.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="delivery" class="blue-panel">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Delivery coverage</h2>
+      <p>Our own fleet runs fixed daily routes across Nairobi and into neighbouring counties.</p>
+    </div>
+    <div class="chips">
+      <span class="chip">Nairobi — all zones</span>
+      <span class="chip">Kiambu</span>
+      <span class="chip">Machakos</span>
+      <span class="chip">Kajiado</span>
+      <span class="chip">Murang'a</span>
+      <span class="chip">Nakuru (selected routes)</span>
+    </div>
+    <p class="note-box">Minimum order for free delivery is KES 15,000; smaller orders can be collected same-day from the warehouse or added to the next scheduled route in your area.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Common questions</h2>
+    </div>
+    <details open>
+      <summary>Do you sell to individuals, or only registered businesses?</summary>
+      <p>Both. Walk-in customers are welcome at bulk prices — you don't need a business registration to buy from the warehouse floor.</p>
+    </details>
+    <details>
+      <summary>Can I get credit terms?</summary>
+      <p>Credit accounts are available to businesses with a trading history with us, typically after the first few cash orders. New customers pay on collection or delivery.</p>
+    </details>
+    <details>
+      <summary>What happens if an item is out of stock?</summary>
+      <p>We'll flag substitutes of similar size and price where available, or hold the remainder of your order for the next delivery at no extra charge.</p>
+    </details>
+    <details>
+      <summary>Do you deliver outside your listed counties?</summary>
+      <p>Occasionally, for large orders — contact our sales line to check feasibility and delivery cost for your area.</p>
+    </details>
+  </div>
+</section>
+
+<section id="trust">
+  <div class="wrap">
+    <div class="warn-panel">
+      <h2>A note on ordering safely</h2>
+      <p>We only take orders through the channels listed below. If you're contacted by someone claiming to represent us on social media, or asked to pay a personal mobile number, treat it as a scam.</p>
+      <ul>
+        <li>We never post prices or request payment through social media comments or DMs.</li>
+        <li>Delivery drivers do not collect cash — all payments go through our official paybill only.</li>
+        <li>If in doubt, call our sales line directly to confirm any order before paying.</li>
+      </ul>
+      <div class="official">
+        <div><strong>Official contact:</strong> +254 755 256 640</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="blue-panel">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Warehouse</h3>
+        <div class="line">Enterprise Road, Industrial Area, Nairobi</div>
+        <div class="line">Monday – Saturday, 7am – 6:30pm</div>
+        <div class="line">Sales: +254 755 256 640</div>
+        <div class="line">Email: samwestdistributors@gmail.com</div>
+      </div>
+      <div class="contact-card">
+        <h3>Accounts & credit terms</h3>
+        <div class="line">For standing orders and credit accounts</div>
+        <div class="line">Phone: +254 755 256 640</div>
+        <div class="line">Email: accounts@samwestdistributors@gmail.com</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Samwest Wholesale Distributors.</span>
+    <span>Nairobi, Kenya</span>
+  </div>
+</footer>
+
+<script>
+  const WHATSAPP_NUMBER = '254755256640';
+  const orderForm = document.getElementById('whatsapp-order-form');
+  const errorMsg = document.getElementById('of-error');
+
+  function safeTrim(value) {
+    return (value || '').trim();
+  }
+
+  if (orderForm) {
+    orderForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = safeTrim(document.getElementById('of-name').value);
+      const phone = safeTrim(document.getElementById('of-phone').value);
+      const location = safeTrim(document.getElementById('of-location').value);
+      const items = safeTrim(document.getElementById('of-items').value);
+      const notes = safeTrim(document.getElementById('of-notes').value);
+
+      if (!name || !location || !items) {
+        errorMsg.classList.add('show');
+        return;
+      }
+      errorMsg.classList.remove('show');
+
+      const itemLines = items
+        .split('\n')
+        .map(function (line) { return line.trim(); })
+        .filter(Boolean)
+        .map(function (line) { return '• ' + line; })
+        .join('\n');
+
+      let message = 'Hello Samwest Wholesale Distributors, I would like to place an order.\n\n';
+      message += 'Name: ' + name + '\n';
+      if (phone) message += 'Phone: ' + phone + '\n';
+      message += 'Delivery / pickup: ' + location + '\n\n';
+      message += 'Items:\n' + itemLines + '\n';
+      if (notes) message += '\nNotes: ' + notes + '\n';
+
+      const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  }
+
+  const track = document.getElementById('carousel-track');
+  const prevBtn = document.getElementById('carousel-prev');
+  const nextBtn = document.getElementById('carousel-next');
+  const scrollAmount = 220;
+
+  if (track && prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', function () {
+      track.scrollBy({ left: -scrollAmount * 2, behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', function () {
+      track.scrollBy({ left: scrollAmount * 2, behavior: 'smooth' });
+    });
+  }
+</script>
+
+</body>
+</html>
